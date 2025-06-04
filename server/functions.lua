@@ -208,7 +208,7 @@ CreateThread(function()
             end
             symbols = symbols..'^0'
             print(symbols)
-            print('^2['..resource..'] - New Update Available.^0\nCurrent Version: ^5'..current_version..'^0.\nNew Version: ^5'..result.version..'^0.\nNotes: ^5'..result.notes..'^0.\n\n^5Download it now on your keymaster.fivem.net^0.')
+            print('^2['..resource..'] - New Update Available.^0\nCurrent Version: ^5'..current_version..'^0.\nNew Version: ^5'..result.version..'^0.\nNotes: ^5'..result.notes..'^0.\n\n^5Download it from https://github.com/apx-studios/apx_core ^0.')
             print(symbols)
         end
     end,'GET')
