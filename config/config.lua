@@ -61,7 +61,7 @@ ApxConfig.Progressbar = 'qbcore'
 ----------------------------------------------------------------------------------------------------
 -- NOTIFICATION SYSTEMS ----------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
--- Available options are: apx_core, qbcore, esx, okok, codem, mythic, ox_lib
+-- Available options are: apx_core, qbcore, esx, okok, codem, mythic, tgiann, ox_lib
 ApxConfig.Notification = 'qbcore'
 ----------------------------------------------------------------------------------------------------
 

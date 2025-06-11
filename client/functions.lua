@@ -189,6 +189,9 @@ function Apx.Functions.Notify(message, time, type)
     elseif ApxConfig.Notification == 'mythic' then
         exports[Config.NotificationsResource]:SendAlert(type, message)
 
+    elseif ApxConfig.Notification == 'tgiann' then
+        exports["tgiann-lumihud"]:Notif(message, type, time)
+
     elseif ApxConfig.Notification == 'ox_lib' then
         lib.notify({
             title = '',
