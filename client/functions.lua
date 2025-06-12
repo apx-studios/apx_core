@@ -378,6 +378,40 @@ function Apx.Functions.Progressbar(data)
         })
 
         return result == true
+
+    elseif ApxConfig.Progressbar == 'tgiann' then -- Contributed by: essentiaplus
+        local p = promise.new()
+        local actions = {
+            name = "apx_" .. tostring(math.random(1000, 9999)),
+            duration = duration,
+            label = label,
+            useWhileDead = useWhileDead,
+            canCancel = canCancel,
+            controlDisables = {
+                car = disable.car or false,
+                move = disable.move or false,
+                combat = disable.combat or false,
+                mouse = disable.mouse or false,
+                disableRun = disable.disableRun or true
+            },
+            animation = next(anim) and {
+                animDict = anim.dict or '',
+                anim = anim.clip or '',
+                flags = tostring(anim.flag or 49)
+            } or nil,
+            prop = next(prop) and {
+                model = prop.model or '',
+                bone = prop.bone or nil,
+                coords = prop.pos or { x = 0.0, y = 0.0, z = 0.0 },
+                rotation = prop.rot or { x = 0.0, y = 0.0, z = 0.0 }
+            } or nil
+        }
+
+        exports["tgiann-lumihud"]:Progress(actions, function(canceled)
+            p:resolve(not canceled)
+        end)
+
+        return Citizen.Await(p)
     else
         print("[Apx.Functions.Progressbar] Invalid progressbar type configured")
         return false
