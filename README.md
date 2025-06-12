@@ -35,7 +35,7 @@
 ```
 
 ## Setting up the config:
-After downloading this resource from your keymaster, you'll need to configure the settings in `apx_core/config/config.lua`. In this file, you'll find a comprehensive list of supported scripts used by most of our resources.
+After downloading this resource from our GitHub, you'll need to configure the settings in `apx_core/config/config.lua`. In this file, you'll find a comprehensive list of supported scripts used by most of our resources.
 
 Please note that not all our scripts utilize every feature listed here, so you may not need to configure everything. If you're not using a specific script that requires certain settings, you can leave those configurations as they are.
 
