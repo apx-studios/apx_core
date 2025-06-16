@@ -9,9 +9,9 @@ description 'Core Resource'
 
 shared_scripts { '@ox_lib/init.lua', 'locale/*.lua', 'config/*.lua' }
 
-client_scripts { 'client/main.lua', 'client/functions.lua', 'client/builtin/*.lua' }
+client_scripts { 'client/main.lua', 'client/functions.lua' }
 
-server_scripts { '@oxmysql/lib/MySQL.lua', 'server/main.lua', 'server/functions.lua', 'server/builtin/*.lua' } 
+server_scripts { '@oxmysql/lib/MySQL.lua', 'server/main.lua', 'server/functions.lua' }
 
 ui_page 'html/index.html'
 
