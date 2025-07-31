@@ -285,6 +285,9 @@ function Apx.Functions.WardrobeOpen(job)
     
     elseif ApxConfig.Clothing == 'tgiann-clothing' then
         TriggerEvent("tgiann-clothing:openOutfitMenu")
+		
+    elseif ApxConfig.Clothing == 'sleek-clothestore' then
+        exports['sleek-clothestore']:OpenWardrobe()
 
     end
 end
@@ -309,6 +312,9 @@ function Apx.Functions.WardrobeShop(job)
             allowedMenus = {[0] = false, [1] = true, [2] = false, [3] = false},
             isBerberMenu = false,
         })
+		
+    elseif ApxConfig.Clothing == 'sleek-clothestore' then
+	exports['sleek-clothestore']:OpenStoreMenu(1)
 
     end
 end
@@ -698,6 +704,9 @@ function Apx.Functions.Keylock(plate, model)
 
     elseif ApxConfig.Keylock == 'tgiann-hotwire' then
         exports["tgiann-hotwire"]:GiveKeyPlate(plate, true)
+		
+    elseif ApxConfig.Keylock == 'is_vehiclekeys' then
+        exports["is_vehiclekeys"]:GiveKey(plate)
 
     end
 end
