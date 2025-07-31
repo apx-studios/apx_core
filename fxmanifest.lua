@@ -4,7 +4,7 @@ lua54 'yes'
 
 author 'Apex Studios - fivem.apx-studios.com'
 name 'apx_core'
-version '0.0.1'
+version '0.0.2'
 description 'Core Resource'
 
 shared_scripts { '@ox_lib/init.lua', 'locale/*.lua', 'config/*.lua' }
