@@ -77,7 +77,7 @@ ApxConfig.Payment = 'jim-payments'
 ----------------------------------------------------------------------------------------------------
 -- CLOTHING SYSTEMS --------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
--- Available options are: qb-clothing, illenium-appearance, crm-appearance, bl_appearance, rcore_clothes, esx_skin, tgiann-clothing
+-- Available options are: qb-clothing, illenium-appearance, crm-appearance, bl_appearance, rcore_clothes, esx_skin, tgiann-clothing, sleek-clothestore
 ApxConfig.Clothing = 'crm-appearance'
 ----------------------------------------------------------------------------------------------------
 
@@ -101,7 +101,7 @@ ApxConfig.Fuel = 'LegacyFuel'
 ----------------------------------------------------------------------------------------------------
 -- GARAGE SYSTEMS ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
--- Available options are: qb-garage, cd_garage, jg-advancedgarages, qs-advancedgarages
+-- Available options are: qb-garage, cd_garage, jg-advancedgarages, qs-advancedgarages, RxGarages
 ApxConfig.Garage = 'jg-advancedgarages'
 ----------------------------------------------------------------------------------------------------
 
@@ -110,7 +110,7 @@ ApxConfig.Garage = 'jg-advancedgarages'
 -- CARLOCK SYSTEMS ---------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 -- Available options are: qb-vehiclekeys, qs-vehiclekeys, wasabi_carlock, jaksam-vehiclekeys, F_RealCarKeysSystem, fivecode_carkeys, stasiek_vehiclekeys, t1ger_keys, ti_vehicleKeys, vehicles_keys, xd_locksystem, MrNewbVehicleKeys, tgiann-hotwire
-ApxConfig.Keylock = 'qb-vehiclekeys'
+ApxConfig.Keylock = 'is_vehiclekeys'
 ----------------------------------------------------------------------------------------------------
 
 
